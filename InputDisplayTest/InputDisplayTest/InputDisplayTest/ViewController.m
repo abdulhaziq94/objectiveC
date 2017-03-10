@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "TableViewController.h"
+
 @interface ViewController()
 @end
 
 @implementation ViewController
-@synthesize Name, NameTF, Fname, FnameTF, dob, Address, AddTF, persons;
+@synthesize Name, NameTF, Fname, FnameTF, dob, Address, AddTF, persons, NewTableView;
 
 
 
@@ -32,7 +34,11 @@
     
     persons = [[NSMutableArray alloc]init];
     
-    self.tableView.dataSource = self;
+    
+    self.NewTableView.dataSource = self;
+
+
+  
 //    person = [ NSMutableArray arrayWithObjects:[NameTF text],[FnameTF text],[AddTF text], [_dateOutput text], nil];
 
 
@@ -57,7 +63,18 @@
    
 }
 
-- (IBAction)newPageButton:(id)sender {
+
+
+- (IBAction)ViewTableButton:(id)sender {
+
+    Person *person = [[Person alloc]init];
+    person.name = NameTF.text;
+    person.fname = FnameTF.text;
+    person.address = AddTF.text;
+    person.dob = _dateOutput.text;
+    
+    [persons addObject:person];
+    [self.NewTableView reloadData];
 }
 
 - (IBAction)ViewBtn:(id)sender {
@@ -71,19 +88,32 @@
     person.dob = _dateOutput.text;
     
     [persons addObject:person];
-    
+    [self.NewTableView reloadData];
     
     
 //    person = [ NSMutableArray arrayWithObjects:input,input2,input3,date, nil];
     
-    [self.tableView reloadData];
+   
 
-    NSLog(@" %@",person);
+//    NSLog(@" %@",person);
 //    _output4.text = date;
 //    _output.text = input;
 //    _output2.text = input2;
 //    _output3.text = input3;
     
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"viewPersons"]) {
+        
+        
+        NSIndexPath *indexPath = [self.NewTableView indexPathForSelectedRow];
+        TableViewController *tableViewController = segue.destinationViewController;
+        tableViewController.NextPageTableView = [persons objectAtIndex:indexPath.row];
+    
+      
+    }
     
 }
 

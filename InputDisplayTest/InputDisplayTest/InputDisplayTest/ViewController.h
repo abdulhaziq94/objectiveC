@@ -26,13 +26,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *FnameTF;
 @property (weak, nonatomic) IBOutlet UITextView *AddTF;
 
-@property (weak, nonatomic) IBOutlet UITextView *output; //outputTextView
-@property (weak, nonatomic) IBOutlet UITextView *output2;
-@property (weak, nonatomic) IBOutlet UITextView *output3;
-@property (weak, nonatomic) IBOutlet UITextView *output4;
+//@property (weak, nonatomic) IBOutlet UITextView *output; 
+//@property (weak, nonatomic) IBOutlet UITextView *output2;
+//@property (weak, nonatomic) IBOutlet UITextView *output3;
+//@property (weak, nonatomic) IBOutlet UITextView *output4;
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) IBOutlet UITableView *NewTableView;
+
+
+- (IBAction)ViewTableButton:(id)sender;
 
 
 

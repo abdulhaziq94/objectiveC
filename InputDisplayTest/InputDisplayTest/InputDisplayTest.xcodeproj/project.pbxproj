@@ -15,6 +15,7 @@
 		5A824D591E6CECFC00F66EAA /* InputDisplayTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D581E6CECFC00F66EAA /* InputDisplayTestUITests.m */; };
 		5AB250CB1E6E94F4003262CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB250CA1E6E94F4003262CF /* main.m */; };
 		5AB94D8B1E6FF60200DAD7ED /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB94D8A1E6FF60200DAD7ED /* Person.m */; };
+		5AB94DA11E71450400DAD7ED /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB94DA01E71450400DAD7ED /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		5AB250CA1E6E94F4003262CF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5AB94D891E6FF60200DAD7ED /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5AB94D8A1E6FF60200DAD7ED /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5AB94D9F1E71450400DAD7ED /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5AB94DA01E71450400DAD7ED /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				5AB94D891E6FF60200DAD7ED /* Person.h */,
 				5AB94D8A1E6FF60200DAD7ED /* Person.m */,
 				5A824D3C1E6CECFB00F66EAA /* Main.storyboard */,
+				5AB94D9F1E71450400DAD7ED /* TableViewController.h */,
+				5AB94DA01E71450400DAD7ED /* TableViewController.m */,
 				5A824D3F1E6CECFB00F66EAA /* Assets.xcassets */,
 				5A824D441E6CECFC00F66EAA /* Info.plist */,
 			);
@@ -269,6 +274,7 @@
 				5A824D3B1E6CECFB00F66EAA /* ViewController.m in Sources */,
 				5AB250CB1E6E94F4003262CF /* main.m in Sources */,
 				5AB94D8B1E6FF60200DAD7ED /* Person.m in Sources */,
+				5AB94DA11E71450400DAD7ED /* TableViewController.m in Sources */,
 				5A824D381E6CECFB00F66EAA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
